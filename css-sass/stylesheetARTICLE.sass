@@ -1,3 +1,59 @@
+$styleDefault: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica
+$darkRed: #5D191B
+$dark: #1A1A1A
+$smile: url(../img/smiley.cur), auto
+// ohne auto kommt das img nicht
+// article page
+
+#articleContent
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
+  
+.article
+  overflow: hidden
+  width: 40%
+  border-radius: 35px
+  background-color: $dark
+  margin: 2%
+
+#articleContent img:hover
+  opacity: 1
+
+
+
+h1
+  width: 100%
+  text-align: center
+  background-image: linear-gradient($darkRed, white)
+  margin-top: 0
+  padding-top: 3%
+  padding-bottom: 3%
+
+h1:hover
+
+
+
+#articleContent img
+  width: 100%
+  height: auto
+  opacity: 0.5
+
+
+#articleContent a
+  text-decoration: none 
+  
+#articleContent p
+  font-size: 1.5em
+  color: white
+  background-color: $dark
+  text-align: center
+  margin: 5%
+
+#insect
+  background-color: $dark
+
 #copyRight
   width: 100%
   margin-bottom: 2%
@@ -12,7 +68,8 @@
   margin: 1%
 
 .icon-bar a:hover 
-  background-color: #000
+  opacity: 0.7
+  border-radius: 35px
 
 .facebook 
   background: #3B5998
@@ -38,9 +95,61 @@
   text-decoration: underline
 
 #spanABOUT:hover
-  cursor: url(../img/smiley.cur), auto
-// ohne auto kommt das img nicht
+  cursor: $smile
 
 
 
 
+// contact page
+
+#main
+  font-size: 1.2em
+  background-image: linear-gradient(white, $darkRed)
+  padding-bottom: 2%
+  padding-top: 2%
+  margin-bottom: 0
+  border-radius: 35px
+
+p
+  margin: 0
+
+form
+  margin: 1.5%
+  margin-left: 5%
+
+textarea, .formularDivs, input, p
+  padding-bottom: 1%
+  margin-top: 1%
+  border-radius: 35px
+
+
+textarea, input
+  padding-left: 2%
+  padding-right: 2%
+  margin-bottom: 1%
+  box-shadow: 0.1em 0.2em $dark
+  transition: width 2s ease-in-out
+
+input:focus, textarea:focus
+  background-color: #F1F1F1
+  width: 80%
+
+
+
+.radiobut
+  box-shadow: none
+
+#button
+  font-size: 0.9em
+  font-family: $styleDefault
+  font-weight: bold
+  background-color: white
+
+#button:hover
+  cursor: $smile
+  background-image: linear-gradient(white, $darkRed)
+  border-color: $darkRed
+  color: white
+
+footer
+  margin-top: 0

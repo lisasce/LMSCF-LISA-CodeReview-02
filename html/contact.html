@@ -43,38 +43,40 @@
 
 		<main>
 
-			<form>
-			First name:<br/>
-			<input type="text" name="nickname" placeholder="your nickname"><br>
-			</form>
+			<div id="main">
+				
+				<form>
+					<p>Your Nickname:</p>
+					<input type="text" name="nickname" placeholder="Your Nickname: "><br>
+	
+					<p>Insert the ref. of the artice you want to comment <br>(You can find it at the bottom of each articles):</p>
+					<input type="text" name="nickname" placeholder="Article's ref. (ex: ref #3564)">
 
-			<div>
-				<br/>
-		      Select gender: <br/>
-		      <input type="radio" name="gender" value="male"> Male <br/>
-		      <input type="radio" name="gender" value="female"> Female <br/>
-		      <input type="radio" name="gender" value="other" checked> Other <br/>
+				<div class="formularDivs">
+			      Select gender:<br>
+			      <input class="radiobut" type="radio" name="gender" value="male"> Male <br>
+			      <input class="radiobut" type="radio" name="gender" value="female"> Female <br>
+			      <input class="radiobut" type="radio" name="gender" value="other" checked> Other <br>
+				</div>
+
+
+				<div class="formularDivs">
+			      	Tell us what you think: <br/>
+			    	<textarea name="message" rows="10" cols="100" placeholder="Your opinion"></textarea>
+			    </div>
+				
+			    <button id="button" onclick="msg()" class="formularDivs" type="button">Thank you for your review !!!</button>
+
+			    </form>
+						
 			</div>
-
-			<br/><br/>
-			<span>
-		      	Tell us what you think: <br/>
-		    <textarea name="message" rows="10" cols="100">Your opinion
-		    </textarea>
-		    </span>
-			
-			<br><br>
-			
-		    <input type="submit" value="Thank you for your review !!!">
-					
-
 
 
 		</main>
 
         <footer>
         	<div id="footerNAV">
-				<ul id="navUL">
+				<ul id="navULfooter">
 					<li class="navLI"><a class="navA" href="index.html"target="_self">Home</a></li>
 					<li class="navLI"><a class="navA" href="index.html"target="_self">Tech</a></li>
 					<li class="navLI"><a class="navA" href="index.html"target="_self">Culture</a></li>
@@ -107,6 +109,10 @@
 
 	function info(){
 		alert("For infos or contact details,\nplease click on the icons :)");
+	}
+
+	function msg(){
+		alert("Your comment was succesfully submitted :)");
 	}
 
 </script>

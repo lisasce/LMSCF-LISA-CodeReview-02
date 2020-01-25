@@ -39,7 +39,7 @@ header:not(#nav) {
   padding: 0;
   overflow: hidden; }
 
-#navUL {
+#navUL, #navULfooter {
   padding-left: 2%;
   margin: 0;
   display: flex;
