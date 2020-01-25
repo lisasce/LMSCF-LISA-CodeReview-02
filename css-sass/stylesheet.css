@@ -15,8 +15,8 @@ header:not(#nav) {
   width: 40%; }
 
 #CFlogo {
-  max-width: 30%;
-  min-width: 30%;
+  max-width: 40%;
+  min-width: 40%;
   padding-left: 5%;
   text-align: left; }
 
@@ -25,9 +25,10 @@ header:not(#nav) {
   text-align: right; }
 
 #CodeFactory {
-  max-width: 50%;
+  max-width: 70%;
   min-width: 50%;
-  padding: 2%; }
+  padding: 2%;
+  padding-right: 5%; }
 
 #nav {
   display: flex;
@@ -50,6 +51,9 @@ header:not(#nav) {
   list-style-type: none;
   padding-top: 2%;
   padding-bottom: 2%; }
+
+nav a:hover, footer a:hover {
+  background-color: #5D191B; }
 
 .navA {
   color: white;
@@ -174,7 +178,7 @@ footer {
   justify-content: flex-end; }
 
 #CFlogo2 {
-  max-width: 15%;
+  max-width: 20%;
   min-width: 15%;
   padding-right: 5%;
   align-self: flex-end; }

@@ -1,0 +1,43 @@
+#copyRight {
+  width: 100%;
+  margin-bottom: 2%;
+  text-align: center; }
+
+.icon-bar a {
+  font-size: 1em;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  margin: 1%; }
+
+.icon-bar a:hover {
+  background-color: #000; }
+
+.facebook {
+  background: #3B5998;
+  color: white; }
+
+.twitter {
+  background: #55ACEE;
+  color: white; }
+
+.google {
+  background: #dd4b39;
+  color: white; }
+
+.linkedin {
+  background: #007bb5;
+  color: white; }
+
+.youtube {
+  background: #bb0000;
+  color: white; }
+
+#spanABOUT {
+  text-decoration: underline; }
+
+#spanABOUT:hover {
+  cursor: url(../img/smiley.cur), auto; }
+
+/*# sourceMappingURL=stylesheetARTICLE.css.map */
