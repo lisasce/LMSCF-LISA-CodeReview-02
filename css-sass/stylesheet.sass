@@ -48,7 +48,9 @@ $breakpointDesktop : 1001px
 
 @media only screen and (min-width: $breakpointDesktop)
 
-
+  .articleContainer div:not(#popular):hover, #devBanner:hover
+    transform: scale(1.5)
+    z-index: 2
 
 // Variables:
 
@@ -170,6 +172,7 @@ img
 #devBanner
   margin: 20px auto
   width: 85%
+  transition: transform 1s
 
 #VERTbanner2
   background-image: url("../img/banner-2.png")
@@ -220,14 +223,20 @@ img
 
 #topPart .articleContainer div:not(#popular)
   width: 32%
+  transition: transform 1s
 // alt:.smallimg
 
 #bottomPart .articleContainer div
   width: 49%
+  transition: transform 1s
 // alt:.middleimg
 
 .articleContainer div img
   height: 100%
+
+
+
+
 // alle img im top und bottom part
 
 // FOOTER

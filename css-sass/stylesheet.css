@@ -52,6 +52,10 @@
 
   .articleContainer p {
     font-size: 2.5vw !important; } }
+@media only screen and (min-width: 1001px) {
+  .articleContainer div:not(#popular):hover, #devBanner:hover {
+    transform: scale(1.5);
+    z-index: 2; } }
 body {
   font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica;
   margin: 0;
@@ -155,7 +159,8 @@ img {
 
 #devBanner {
   margin: 20px auto;
-  width: 85%; }
+  width: 85%;
+  transition: transform 1s; }
 
 #VERTbanner2 {
   background-image: url("../img/banner-2.png"); }
@@ -199,10 +204,12 @@ img {
   position: relative; }
 
 #topPart .articleContainer div:not(#popular) {
-  width: 32%; }
+  width: 32%;
+  transition: transform 1s; }
 
 #bottomPart .articleContainer div {
-  width: 49%; }
+  width: 49%;
+  transition: transform 1s; }
 
 .articleContainer div img {
   height: 100%; }
