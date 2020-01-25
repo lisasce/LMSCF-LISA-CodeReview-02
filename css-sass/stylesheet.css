@@ -60,49 +60,99 @@ main {
   max-width: 90%;
   margin: auto; }
 
+img {
+  width: 100%;
+  height: auto; }
+
 #date {
   position: relative;
   max-width: 90%;
   margin: auto;
   text-align: right; }
 
-#contentALL {
-  margin-left: 2%;
-  margin-right: 2%;
+#content {
+  margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  width: 95%; }
 
-.smallIMG {
-  width: 100%; }
+#content p {
+  background-color: #1A1A1A;
+  color: white;
+  margin: 0;
+  bottom: 0;
+  padding-top: 3%;
+  padding-left: 1%;
+  position: absolute;
+  width: 99%; }
 
-.imgDiv {
-  width: 24%;
-  height: auto; }
+.smallIMG p {
+  font-size: 1.4em;
+  min-height: 20%; }
 
 .generalTitles {
   background-color: #DDDDDD;
   color: #595959;
-  font-size: 1.5em;
-  width: 100%; }
+  font-size: 1.8em;
+  width: 100%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  padding-left: 1%;
+  padding-bottom: 0.5%;
+  max-height: 1em; }
+
+#subContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 85%; }
+
+.smallIMG {
+  width: 32%;
+  height: 16%;
+  position: relative;
+  background-color: #1A1A1A; }
 
 #popular {
-  margin-right: 10%; }
+  margin-top: -1%; }
 
-.middleIMG {
-  width: 35%;
-  height: auto; }
+.x {
+  margin-top: -2%; }
 
-#VERTbanner1, #VERTbanner2 {
-  width: 10%;
-  height: auto;
-  position: absolute;
-  text-align: center; }
+#DivCheater {
+  height: 11em;
+  width: 100%; }
+
+#banners {
+  width: 14%;
+  display: flex;
+  flex-direction: column; }
 
 #devBanner {
-  width: 80%;
-  height: auto; }
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 45%;
+  width: 75%;
+  height: auto;
+  position: absolute; }
+
+.middleIMG {
+  width: 48%;
+  height: auto;
+  position: relative;
+  margin-bottom: 2.5%; }
+
+.middleIMG p {
+  font-size: 2em;
+  min-height: 15%;
+  padding-bottom: 2.5%;
+  margin-bottom: 2%; }
+
+#VERTbanner2 {
+  margin-top: 90%; }
 
 footer {
   display: flex;
@@ -112,7 +162,8 @@ footer {
   background-color: #1A1A1A;
   padding: 0;
   overflow: hidden;
-  color: white; }
+  color: white;
+  margin-top: 3%; }
 
 #footerNAV {
   display: flex;
