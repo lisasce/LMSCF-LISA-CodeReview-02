@@ -1,0 +1,244 @@
+@media only screen and (max-width: 502px)
+// #imgInHeaderRight
+// 	display: none
+
+// #navUL
+// 	flex-direction: column
+// 	flex-wrap: wrap
+
+// img
+// 	width: 30%
+// 	height: auto
+
+@media only screen and (min-width: 503px) and (max-width: 1000px)
+
+// img
+// 	width: 50%
+// 	height: auto
+
+@media only screen and (min-width: 1001px)
+
+// img
+// 	width: 100%
+// 	height: auto
+
+
+// Variables:
+
+$darkRed: #5D191B
+$dark: #1A1A1A
+$styleDefault: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica
+
+
+body
+	font-family: $styleDefault
+	margin: 0
+	padding: 0
+
+// HEADER
+
+header:not(#nav)
+	background-color: $darkRed
+
+#imgInHeader
+	display: flex
+	align-items: center
+	justify-content: space-around
+
+#imgInHeaderLeft
+	width: 40%
+		
+#CFlogo	
+	max-width: 40%
+	min-width: 40%
+	padding-left: 5%
+	text-align: left
+
+#imgInHeaderRight
+	width: 60%
+	text-align: right
+	
+#CodeFactory
+	max-width: 70%
+	min-width: 50%
+	padding: 2%
+	padding-right: 5%
+
+// NAV
+
+#nav
+	display: flex
+	justify-content: flex-start
+	width: 100%
+	height: auto
+	background-color: $dark
+	padding: 0
+	overflow: hidden
+
+#navUL, #navULfooter
+	padding-left: 2%
+	margin: 0
+	display: flex
+	justify-content: flex-start
+	flex-direction: row
+
+
+
+.navLI
+	margin-right: 5%
+	list-style-type: none
+	padding-top: 2%
+	padding-bottom: 2%
+
+nav a:hover, footer a:hover
+	background-color: $darkRed
+
+
+
+.navA
+	color: white
+	text-decoration: none
+	font-size: 1.5em
+
+// MAIN
+
+main
+	max-width: 90%
+	margin: auto
+// darauf achten bei den querie!!!!
+img
+	width: 100%
+	height: auto
+
+#date
+	position: relative
+	max-width: 90%
+	margin: auto
+	text-align: right
+// muss bei querie verschwinden
+
+#content
+	margin: auto
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	flex-wrap: wrap
+	width: 95%
+
+
+#content p
+	background-color: $dark
+	color: white
+	margin: 0
+	bottom: 0 // unterer rand von p wird mit rand von div gleichgesetzt
+	padding-top: 3%
+	padding-left: 1%
+	position: absolute
+	width: 99%
+
+
+.smallIMG p
+		font-size: 1.4em	
+		min-height: 20%
+
+.generalTitles
+	background-color: #DDDDDD
+	color: #595959
+	font-size: 1.8em
+	width: 100%
+	margin-bottom: 2%
+	margin-top: 2%
+	padding-left: 1%
+	padding-bottom: 0.5%
+	max-height: 1em
+
+#subContent
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	flex-wrap: wrap	
+	width: 85%
+
+.smallIMG
+	width: 32%
+	height: 16%
+	position: relative
+	background-color: $dark
+
+#popular
+	margin-top: -1%
+.x
+	margin-top: -2%
+
+
+#DivCheater
+	height: 11em
+	width: 100%
+#banners
+	width: 14%
+	display: flex
+	flex-direction: column
+
+#devBanner
+	margin-left: 5%
+	margin-right: 5%
+	margin-top: 45%
+	width: 75%
+	height: auto
+	position: absolute
+
+.middleIMG
+	width: 48%
+	height: auto
+	position: relative
+	margin-bottom: 2.5%
+
+
+
+.middleIMG p
+	font-size: 2em	
+	min-height: 15%
+	padding-bottom: 2.5%
+	margin-bottom: 2%
+
+
+#VERTbanner2
+	margin-top: 90%
+	
+
+
+
+// FOOTER
+
+footer
+	display: flex
+	flex-direction: column
+	width: 100%
+	height: auto
+	background-color: $dark
+	padding: 0
+	overflow: hidden
+	color: white
+	margin-top: 3%
+
+#footerNAV
+	display: flex
+	justify-content:flex-start
+	padding-top: 1%
+
+
+#imgInFOOTERright
+	display: flex
+	justify-content: flex-end
+
+#CFlogo2	
+	max-width: 20%
+	min-width: 15%
+	padding-right: 5%
+	align-self: flex-end
+
+#copyRight
+	align-self: center
+	font-size: 1.2em
+ 
+

@@ -1,3 +1,30 @@
+@media screen and (max-width: 502px) {
+  #imgInHeaderRight, #devBanner, .bannerDiv, #date {
+    display: none; }
+
+  header {
+    height: 3em; }
+
+  #imgInHeader {
+    height: 70%; }
+
+  #cheatImg, #fswdKlein {
+    display: block !important; }
+
+  #phone {
+    display: none; }
+
+  #topPart .articleContainer div:not(#popular) {
+    width: 49% !important; }
+
+  .articleContainer {
+    width: 99% !important; }
+
+  .articleContainer div {
+    margin-bottom: 2%; }
+
+  .articleContainer p {
+    font-size: 2.5vw !important; } }
 body {
   font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica;
   margin: 0;
@@ -15,7 +42,7 @@ header:not(#nav) {
   width: 40%; }
 
 #CFlogo {
-  max-width: 40%;
+  max-width: 50%;
   min-width: 40%;
   padding-left: 5%;
   text-align: left; }
@@ -58,7 +85,7 @@ nav a:hover, footer a:hover {
 .navA {
   color: white;
   text-decoration: none;
-  font-size: 1.5em; }
+  font-size: 2vw; }
 
 main {
   max-width: 90%;
@@ -74,14 +101,6 @@ img {
   margin: auto;
   text-align: right; }
 
-#content {
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 95%; }
-
 #content p {
   background-color: #1A1A1A;
   color: white;
@@ -92,71 +111,34 @@ img {
   position: absolute;
   width: 99%; }
 
-.smallIMG p {
-  font-size: 1.4em;
-  min-height: 20%; }
-
 .generalTitles {
   background-color: #DDDDDD;
   color: #595959;
-  font-size: 1.8em;
-  width: 100%;
+  font-size: 2.3vw;
+  width: 99%;
   margin-bottom: 2%;
   margin-top: 2%;
   padding-left: 1%;
   padding-bottom: 0.5%;
   max-height: 1em; }
 
-#subContent {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 85%; }
-
-.smallIMG {
-  width: 32%;
-  height: 16%;
-  position: relative;
-  background-color: #1A1A1A; }
-
 #popular {
-  margin-top: -1%; }
-
-.x {
-  margin-top: -2%; }
-
-#DivCheater {
-  height: 11em;
-  width: 100%; }
-
-#banners {
-  width: 14%;
-  display: flex;
-  flex-direction: column; }
+  width: 100%;
+  height: 10%; }
 
 #devBanner {
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 45%;
-  width: 75%;
-  height: auto;
-  position: absolute; }
-
-.middleIMG {
-  width: 48%;
-  height: auto;
-  position: relative;
-  margin-bottom: 2.5%; }
-
-.middleIMG p {
-  font-size: 2em;
-  min-height: 15%;
-  padding-bottom: 2.5%;
-  margin-bottom: 2%; }
+  margin: 20px auto;
+  width: 85%; }
 
 #VERTbanner2 {
-  margin-top: 90%; }
+  background-image: url("../img/banner-2.png"); }
+
+.bannerDiv {
+  width: 10%;
+  min-height: 100%;
+  max-height: 100%; }
+  .bannerDiv img {
+    height: 100%; }
 
 footer {
   display: flex;
@@ -185,6 +167,87 @@ footer {
 
 #copyRight {
   align-self: center;
-  font-size: 1.2em; }
+  font-size: 1.5vw; }
+
+#topPart, #bottomPart {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 95%; }
+
+#topPart p {
+  min-height: 25%;
+  font-size: 1.5vw; }
+
+#bottomPart p {
+  height: 20%;
+  font-size: 1.8vw; }
+
+.articleContainer {
+  width: 88%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+#cheatImg, #fswdKlein {
+  display: none; }
+
+#phone, #power {
+  margin-bottom: 2%; }
+
+#topPart .articleContainer div, #bottomPart .articleContainer div {
+  position: relative; }
+
+#topPart .articleContainer div:not(#popular) {
+  width: 32%; }
+
+#bottomPart .articleContainer div {
+  width: 49%; }
+
+.articleContainer div img {
+  height: 100%; }
+
+/*.middleIMG {
+ *  width: 48%;
+ *  height: auto;
+ *  position: relative;
+ *  margin-bottom: 2.5%; }
+ *
+ *.middleIMG p {
+ *  font-size: 2em;
+ *  min-height: 15%;
+ *  padding-bottom: 2.5%;
+ *  margin-bottom: 2%; }
+ *
+ *.smallIMG p {
+ *  font-size: 2vw;
+ *  min-height: 20%; }
+ *
+ *.x {
+ *  margin-top: -2%; }
+ *
+ *#DivCheater {
+ *  height: 11em;
+ *  width: 100%; }
+ *
+ *#banners {
+ *  width: 14%;
+ *  display: flex;
+ *  flex-direction: column; }
+ *
+ *#subContent {
+ *  display: flex;
+ *  flex-direction: row;
+ *  justify-content: space-between;
+ *  flex-wrap: wrap;
+ *  width: 85%; }
+ *
+ *.smallIMG {
+ *  width: 32%;
+ *  height: 16%;
+ *  position: relative;
+ *  background-color: $dark; } */
 
 /*# sourceMappingURL=stylesheet.css.map */
