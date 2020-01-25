@@ -25,6 +25,33 @@
 
   .articleContainer p {
     font-size: 2.5vw !important; } }
+@media only screen and (min-width: 503px) and (max-width: 1000px) {
+  #date, #fswdKlein, #popular, .bannerDiv {
+    display: none; }
+
+  header {
+    height: 5em; }
+
+  #imgInHeader {
+    height: 70%; }
+
+  #cheatImg {
+    display: block !important; }
+
+  #phone {
+    display: none; }
+
+  #topPart .articleContainer div:not(#popular) {
+    width: 49% !important; }
+
+  .articleContainer {
+    width: 99% !important; }
+
+  .articleContainer div {
+    margin-bottom: 2%; }
+
+  .articleContainer p {
+    font-size: 2.5vw !important; } }
 body {
   font-family: "Arial Narrow", Arial, "Helvetica Condensed", Helvetica;
   margin: 0;
@@ -140,35 +167,6 @@ img {
   .bannerDiv img {
     height: 100%; }
 
-footer {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-  background-color: #1A1A1A;
-  padding: 0;
-  overflow: hidden;
-  color: white;
-  margin-top: 3%; }
-
-#footerNAV {
-  display: flex;
-  padding-top: 1%; }
-
-#imgInFOOTERright {
-  display: flex;
-  justify-content: flex-end; }
-
-#CFlogo2 {
-  max-width: 20%;
-  min-width: 15%;
-  padding-right: 5%;
-  align-self: flex-end; }
-
-#copyRight {
-  align-self: center;
-  font-size: 1.5vw; }
-
 #topPart, #bottomPart {
   margin: auto;
   display: flex;
@@ -209,45 +207,33 @@ footer {
 .articleContainer div img {
   height: 100%; }
 
-/*.middleIMG {
- *  width: 48%;
- *  height: auto;
- *  position: relative;
- *  margin-bottom: 2.5%; }
- *
- *.middleIMG p {
- *  font-size: 2em;
- *  min-height: 15%;
- *  padding-bottom: 2.5%;
- *  margin-bottom: 2%; }
- *
- *.smallIMG p {
- *  font-size: 2vw;
- *  min-height: 20%; }
- *
- *.x {
- *  margin-top: -2%; }
- *
- *#DivCheater {
- *  height: 11em;
- *  width: 100%; }
- *
- *#banners {
- *  width: 14%;
- *  display: flex;
- *  flex-direction: column; }
- *
- *#subContent {
- *  display: flex;
- *  flex-direction: row;
- *  justify-content: space-between;
- *  flex-wrap: wrap;
- *  width: 85%; }
- *
- *.smallIMG {
- *  width: 32%;
- *  height: 16%;
- *  position: relative;
- *  background-color: $dark; } */
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-color: #1A1A1A;
+  padding: 0;
+  overflow: hidden;
+  color: white;
+  margin-top: 3%; }
+
+#footerNAV {
+  display: flex;
+  padding-top: 1%; }
+
+#imgInFOOTERright {
+  display: flex;
+  justify-content: flex-end; }
+
+#CFlogo2 {
+  max-width: 20%;
+  min-width: 15%;
+  padding-right: 5%;
+  align-self: flex-end; }
+
+#copyRight {
+  align-self: center;
+  font-size: 1.5vw; }
 
 /*# sourceMappingURL=stylesheet.css.map */
